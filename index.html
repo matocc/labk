@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+<head> Welcome to Mohammad Tariq Malikzada Online library </head>
+<head> <colgroup><colgroup></colgroup></colgroup>
+    <meta charset="UTF-8">
+    <title>Online Library Management System</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+        }
+        .container {
+            display: flex;
+            justify-content: space-between;
+            margin: 20px;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .book-list {
+            flex: 1;
+            margin-right: 20px;
+            padding: 20px;
+            background-color: #fff;
+            border: 1px solid #ccc;
+        }
+        .add-book {
+            flex: 1;
+            margin-right: 20px;
+            padding: 20px;
+            background-color: #fff;
+            border: 1px solid #ccc;
+        }
+        .search-books {
+            flex: 1;
+            padding: 20px;
+            background-color: #fff;
+            border: 1px solid #ccc;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+        th, td {
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        .add-button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+        }
+        .add-button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="book-list">
+            <h2>Book List</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Title</th>
+                        <th>Author</th>
+                        <th>ISBN</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Populate this with books from the database -->
+                </tbody>
+            </table>
+        </div>
+        <div class="add-book">
+            <h2>Add New Book</h2>
+            <input type="text" id="title" placeholder="Title"><br>
+            <input type="text" id="author" placeholder="Author"><br>
+            <input type="text" id="isbn" placeholder="ISBN"><br>
+            <button class="add-button" onclick="addBook()">Add Book</button>
+        </div>
+        <div class="search-books">
+            <h2>Search Books</h2>
+            <input type="text" id="search" placeholder="Search...">
+            <button onclick="searchBooks()">Search</button>
+        </div>
+    </div>
+
+    <script>
+        // Function to add a new book
+        function addBook() {
+            const title = document.getElementById("title").value;
+            const author = document.getElementById("author").value;
+            const isbn = document.getElementById("isbn").value;
+
+            // Implement code to add the book to the database here
+        }
+
+        // Function to search for books
+        function searchBooks() {
+            const searchTerm = document.getElementById("cheatsheet-a5.pdf").value;
+
+            // Implement code to search for books in the database and display the results here
